@@ -13,21 +13,21 @@ public class SuperList extends ListManager {
         Object elemento = list.remove(position);
         return elemento;
     }
+
     @Override
     public void showElements() {
-        Iterator<Object> it = list.iterator() ;
+        Iterator<Object> it = list.iterator();
         while (it.hasNext()) {
-            Object valor = it.next() ;
-            System.out.println(valor) ;
+            Object valor = it.next();
+            System.out.println(valor);
         }
     }
 
     @Override
     public void showReversedElements() {
-        for (int i = list.size(); i >= 0 ; i--) {
-                Object valor = list.get(i);
-                System.out.println(valor);
-            }
+        for (int i = list.size(); i >= 0; i--) {
+            Object valor = list.get(i);
+            System.out.println(valor);
         }
     }
-}
+}a
