@@ -24,7 +24,7 @@ public class SuperList extends ListManager {
 
     @Override
     public void showReversedElements() {
-        for (int i = list.size(); i >= list.size() ; i--) {
+        for (int i = list.size(); i >= 0 ; i--) {
                 Object valor = list.get(i);
                 System.out.println(valor);
             }
